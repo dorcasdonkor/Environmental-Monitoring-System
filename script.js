@@ -154,7 +154,7 @@ async function fetchHistorical() {
     const humMeans = dates.map((date) => {
       const values = dailyHum[date] || [];
       return values.length > 0
-        ? (values.reduce((a, b) => a + b, 0) / values.length).toFixed(1)
+        ? Math.round((values.reduce((a, b) => a + b, 0) / values.length) * 10) / 10
         : 0;
     });
 
