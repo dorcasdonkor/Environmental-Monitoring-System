@@ -8,11 +8,16 @@ This project is a simple web-based system for monitoring environmental parameter
 - User-friendly interface
 - Customizable monitoring options
 
+
 ## Files
 
 - `index.html`: Main HTML file
 - `script.js`: JavaScript logic
 - `styles.css`: Styling
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2eda63a9ce1687ad901e253b8ecf5baac2599977
 
 ## Getting Started
 
