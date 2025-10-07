@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Environmental Monitoring System</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Environmental Monitoring System</h1>
-        <p>Real-time data for Accra, Ghana</p>
+      <h1>Environmental Monitoring System</h1>
+      <p>Real-time data for Accra, Ghana</p>
     </header>
 
     <main>
-        <div class="data-grid">
-            <div class="data-card" id="temperature">
-                <h2>Temperature</h2>
-                <p class="value" id="temp-value">--°C</p>
-                <p class="status" id="temp-status">Loading...</p>
-            </div>
-
-            <div class="data-card" id="humidity">
-                <h2>Humidity</h2>
-                <p class="value" id="humidity-value">--%</p>
-                <p class="status" id="humidity-status">Loading...</p>
-            </div>
-
-            <div class="data-card" id="aqi">
-                <h2>Air Quality Index</h2>
-                <p class="value" id="aqi-value">--</p>
-                <p class="status" id="aqi-status">Loading...</p>
-            </div>
+      <div class="data-grid">
+        <div class="data-card" id="temperature">
+          <h2>Temperature</h2>
+          <p class="value" id="temp-value">--°C</p>
+          <p class="status" id="temp-status">Loading...</p>
         </div>
 
-        <div class="historical-section">
-            <h2>Historical Weather Data (Last 7 Days)</h2>
-            <canvas id="historicalChart"></canvas>
+        <div class="data-card" id="humidity">
+          <h2>Humidity</h2>
+          <p class="value" id="humidity-value">--%</p>
+          <p class="status" id="humidity-status">Loading...</p>
         </div>
 
-        <div id="alerts" class="alerts">
-            <!-- Alerts will be inserted here -->
+        <div class="data-card" id="aqi">
+          <h2>Air Quality Index</h2>
+          <p class="value" id="aqi-value">--</p>
+          <p class="status" id="aqi-status">Loading...</p>
         </div>
+      </div>
+
+      <div class="historical-section">
+        <h2>Historical Weather Data (Last 7 Days)</h2>
+        <canvas id="historicalChart"></canvas>
+      </div>
+
+      <div id="alerts" class="alerts">
+        <!-- Alerts will be inserted here -->
+      </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 Environmental Monitoring System. Data from Open-Meteo API.</p>
+      <p>
+        &copy; 2025 Environmental Monitoring System. Data from Open-Meteo API.
+      </p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
